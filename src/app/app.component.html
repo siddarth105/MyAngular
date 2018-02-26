@@ -1,0 +1,25 @@
+<h1>
+  {{title}}
+</h1>
+<header class = "navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a href="#" class="navbar-brand" routerLink="/" (click)='isSearchClicked=false'>
+				<strong>My Angular App</strong>
+			</a>
+		</div>
+	</div>
+</header>
+<div>
+	<ul>
+	    <li><a href="#" [routerLink]="['/','onChat']">Chat Page!</a></li>
+	</ul>
+	<router-outlet></router-outlet>
+</div>
+<br/>
+<br/>
+<h2>To connect to Spring Jersy REST call</h2>
+<br/>
+<button type="button" (click)="myFunction()">Click Me!</button>
+<br/>
+<h2>{{post.value}}</h2>
